@@ -1,0 +1,266 @@
+/* Genel Body Ayarları */
+body {
+    background-color: #ffffff !important; /* Beyaz arka plan */
+    color: #333 !important; /* Siyah yazı */
+}
+
+/* SmallBox */
+.small-box {
+    background-color: #f9f9f9 !important; /* SmallBox arka planı */
+    color: #333 !important; /* Yazı rengi */
+    border: 1px solid #ddd !important; /* Kenar */
+    box-shadow: none !important; /* Gölge yok */
+}
+
+.small-box h3 {
+    color: #333 !important; /* Başlık rengi */
+    font-weight: bold;
+}
+
+.small-box p {
+    color: #555 !important; /* Açıklama yazı rengi */
+}
+
+.small-box .icon i {
+    color: #aaa !important; /* İkon rengi */
+}
+
+.small-box-footer {
+    background-color: #f5f5f5 !important; /* Footer arka planı */
+    color: #555 !important; /* Footer yazı rengi */
+    border-top: 1px solid #ddd !important; /* Üst kenar */
+    text-decoration: none !important;
+}
+
+.small-box-footer:hover {
+    background-color: #eaeaea !important; /* Hover durumunda açık gri */
+    color: #333 !important; /* Siyah hover yazı rengi */
+}
+
+/* Butonlar */
+button, .btn {
+    background-color: #f5f5f5 !important; /* Buton arka planı */
+    color: #333 !important; /* Siyah yazı */
+    border: 1px solid #ddd !important; /* Kenar */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+    box-shadow: none !important; /* Gölge yok */
+    padding: 8px 12px !important; /* Buton boyutu */
+}
+
+button:hover, .btn:hover {
+    background-color: #e0e0e0 !important; /* Hover arka planı */
+    color: #333 !important; /* Siyah yazı */
+    border-color: #ccc !important; /* Hover kenar */
+}
+
+/* Aktif Buton */
+button:active, .btn:active {
+    background-color: #ddd !important; /* Aktif arka plan */
+    color: #333 !important; /* Aktif yazı */
+    border-color: #bbb !important;
+}
+
+/* Disabled Buton */
+button:disabled, .btn:disabled {
+    background-color: #f5f5f5 !important;
+    color: #aaa !important; /* Açık gri yazı */
+    border: 1px solid #ddd !important;
+    cursor: not-allowed !important;
+}
+
+/* Kartlar */
+.card {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+}
+
+.card-header {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.card-body {
+    background-color: #ffffff !important;
+    color: #333 !important;
+}
+
+.card-footer {
+    background-color: #f9f9f9 !important;
+    border-top: 1px solid #ddd !important;
+}
+
+/* Modal */
+.modal-content {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+.modal-header {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.modal-footer {
+    background-color: #f9f9f9 !important;
+    color: #333 !important;
+    border-top: 1px solid #ddd !important;
+}
+
+/* Input Alanları */
+input, textarea, select {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #999 !important;
+    box-shadow: none !important;
+}
+
+/* Tablolar */
+table {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border-collapse: collapse !important;
+    border: 1px solid #ddd !important;
+}
+
+table th {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+table td {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9 !important;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f7f7f7 !important;
+}
+
+/* Scrollbar */
+body, .main-sidebar, .content-wrapper {
+    scrollbar-color: #ccc #f9f9f9 !important;
+    scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+/* SweetAlert2 */
+.swal2-popup {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+.swal2-confirm, .swal2-cancel {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* Sidebar */
+.main-sidebar {
+    background-color: #f9f9f9 !important;
+    color: #333 !important;
+}
+
+.main-sidebar .nav-link {
+    color: #555 !important;
+}
+
+.main-sidebar .nav-link.active {
+    background-color: #ddd !important;
+    color: #333 !important;
+}
+/* Kart Başlıkları Genel Ayarlar */
+.card-header {
+    background-color: #f5f5f5 !important; /* Açık gri arka plan */
+    color: #333 !important; /* Siyah yazı rengi */
+    border-bottom: 1px solid #ddd !important; /* Alt kenar */
+    font-weight: bold !important; /* Başlık yazısını kalınlaştır */
+}
+
+/* Kart Başlıklarının Beyaz Sorununu Gidermek İçin */
+.card-header h3, .card-header p, .card-header span {
+    color: #333 !important; /* Başlık içindeki tüm yazıları siyah yap */
+}
+
+/* Kart Gövdesi (Body) Ayarları */
+.card-body {
+    background-color: #ffffff !important; /* Beyaz arka plan */
+    color: #333 !important; /* Siyah yazı rengi */
+}
+
+/* Tüm Kartlar için Varsayılan Ayarlar */
+.card {
+    background-color: #ffffff !important; /* Beyaz arka plan */
+    color: #333 !important; /* Siyah yazı */
+    border: 1px solid #ddd !important; /* Kenarlık */
+    box-shadow: none !important; /* Gölge yok */
+}
+
+/* Small Box Başlıkları ve Yazıları */
+.small-box {
+    background-color: #f9f9f9 !important; /* Açık gri arka plan */
+    color: #333 !important; /* Siyah yazı */
+}
+
+.small-box h3, .small-box p {
+    color: #333 !important; /* Small Box yazıları siyah */
+}
+
+/* Small Box İkon Renkleri */
+.small-box .icon i {
+    color: #aaa !important; /* İkon açık gri */
+}
+
+/* Aktif ve Hover Durumları */
+.card-header:hover, .small-box:hover {
+    background-color: #eaeaea !important; /* Hover açık gri arka plan */
+    color: #333 !important; /* Siyah yazı */
+}
+
+/* Butonlar */
+button, .btn {
+    background-color: #f5f5f5 !important; /* Açık gri arka plan */
+    color: #333 !important; /* Siyah yazı */
+    border: 1px solid #ddd !important; /* Açık gri kenar */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+}
+
+button:hover, .btn:hover {
+    background-color: #e0e0e0 !important; /* Hover gri tonlarında */
+    color: #333 !important; /* Siyah yazı */
+    border-color: #ccc !important; /* Kenar rengi */
+}

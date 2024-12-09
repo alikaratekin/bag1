@@ -1,0 +1,472 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container-fluid, .content-wrapper, .modal-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.main-header {
+    background-color: #1e1e1e !important; /* Header için koyu arka plan */
+    border-bottom: 1px solid #333 !important; /* Alt çizgi */
+    color: #e0e0e0 !important; /* Yazı rengi */
+}
+
+.main-header .navbar {
+    background-color: #1e1e1e !important; /* Header navbar için koyu arka plan */
+    color: #e0e0e0 !important; /* Yazı rengi */
+}
+
+.main-header .navbar .nav-link {
+    color: #e0e0e0 !important; /* Link rengi */
+}
+
+.main-footer {
+    background-color: #1e1e1e !important; /* Footer için koyu arka plan */
+    border-top: 1px solid #333 !important; /* Üst çizgi */
+    color: #e0e0e0 !important; /* Yazı rengi */
+}
+
+.main-footer a {
+    color: #1976d2 !important; /* Footer link rengi */
+    text-decoration: none !important;
+}
+
+.main-footer a:hover {
+    color: #1565c0 !important; /* Hover durumunda footer link rengi */
+}
+.main-header .nav-item .nav-link i {
+    color: #ffffff !important; /* Menü ikonunu beyaz yap */
+}
+
+.main-header .nav-item .nav-link {
+    color: #ffffff !important; /* Buton yazı rengini beyaz yap */
+    background-color: transparent !important; /* Arka planı şeffaf bırak */
+    border: none !important;
+}
+
+.main-header .nav-item .nav-link:hover {
+    background-color: #333 !important; /* Hover durumunda arka plan rengi */
+    color: #ffffff !important; /* Hover durumunda yazı rengi beyaz */
+}
+/* Tüm input, textarea ve select elemanlarını kapsar */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"], /* Datetime girdisi eklendi */
+textarea,
+select {
+    background-color: #2b2b2b !important; /* Koyu arka plan */
+    color: #e0e0e0 !important; /* Açık yazı rengi */
+    border: 1px solid #444 !important; /* Kenar rengi */
+    border-radius: 4px !important; /* Köşeleri yuvarlama */
+    padding: 5px 10px !important; /* İç boşluk */
+    font-size: 14px !important; /* Yazı boyutu */
+}
+
+/* Odaklanma durumunda özel stil */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus, /* Datetime girdisi odak stili */
+textarea:focus,
+select:focus {
+    border-color: #1976d2 !important; /* Odak durumunda kenar rengi */
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5) !important; /* Hafif mavi parlama */
+    outline: none !important;
+}
+
+/* Placeholder Rengi */
+::placeholder {
+    color: #888 !important; /* Placeholder için daha açık bir renk */
+    opacity: 1 !important; /* Görünürlüğü artır */
+}
+
+/* Disabled Durumu */
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #444 !important; /* Disabled durumunda arka plan */
+    color: #888 !important; /* Disabled durumunda yazı rengi */
+    cursor: not-allowed !important;
+}
+
+/* DateTime Picker için özel ok ikonu */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-color: #1976d2 !important; /* Mavi arka plan */
+    color: #fff !important; /* Beyaz ikon */
+    border-radius: 4px !important; /* Yuvarlak kenarlar */
+    padding: 5px !important; /* İkon boşluğu */
+}
+
+/* Hover Durumu */
+input[type="datetime-local"]:hover {
+    background-color: #353535 !important; /* Hover sırasında koyu gri */
+}
+
+/* Genel tablo stil ayarları */
+table {
+    background-color: #1e1e1e !important; /* Tablo arka planı */
+    color: #e0e0e0 !important; /* Yazı rengi */
+    border-collapse: collapse !important; /* Kenarlıklar düzgün görünsün */
+    width: 100% !important; /* Tam genişlik */
+    border: 1px solid #2b2b2b !important; /* Dış kenarlık */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important; /* Hafif gölge */
+}
+
+/* Tablonun başlık hücreleri */
+table th {
+    background-color: #333 !important; /* Başlık hücrelerinin arka planı */
+    color: #ffffff !important; /* Başlık yazı rengi */
+    text-align: center !important; /* Yazı hizalaması */
+    padding: 10px !important; /* İç boşluk */
+    border: 1px solid #2b2b2b !important; /* Çerçeve rengi */
+    font-weight: bold !important; /* Kalın yazı */
+}
+
+/* Tablonun gövde hücreleri */
+table td {
+    background-color: #2b2b2b !important; /* Hücre arka planı */
+    color: #e0e0e0 !important; /* Hücre yazı rengi */
+    padding: 10px !important; /* İç boşluk */
+    text-align: center !important; /* Ortalanmış metin */
+    border: 1px solid #2b2b2b !important; /* Hücre kenarlığı */
+}
+
+/* Hover durumu için satır rengi */
+table tbody tr:hover {
+    background-color: #353535 !important; /* Hover durumunda daha açık gri */
+    transition: background-color 0.3s ease-in-out !important; /* Hover animasyonu */
+}
+
+/* Alternatif satır renkleri */
+table tbody tr:nth-child(even) {
+    background-color: #292929 !important; /* Çift numaralı satırlar */
+}
+
+/* Sayfalama (pagination) */
+/* Genel tablo ayarları */
+.table {
+    background-color: #1e1e1e !important; /* Arka plan rengi */
+    color: #e0e0e0 !important; /* Yazı rengi */
+    border-collapse: collapse !important;
+    width: 100% !important; /* Tam genişlik */
+    border: 1px solid #2b2b2b !important; /* Dış kenarlık */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important; /* Hafif gölge */
+}
+
+/* Tablo başlık ayarları */
+.table th {
+    background-color: #333 !important; /* Başlık arka plan rengi */
+    color: #ffffff !important; /* Başlık yazı rengi */
+    text-align: center !important; /* Ortalanmış yazı */
+    padding: 10px !important; /* İç boşluk */
+    border: 1px solid #2b2b2b !important; /* Kenarlık */
+    font-weight: bold;
+}
+
+/* Tablo gövde ayarları */
+.table td {
+    background-color: #2b2b2b !important; /* Hücre arka plan rengi */
+    color: #e0e0e0 !important; /* Yazı rengi */
+    padding: 10px !important; /* İç boşluk */
+    text-align: center !important; /* Ortalanmış yazı */
+    border: 1px solid #2b2b2b !important; /* Hücre kenarlığı */
+}
+
+/* Hover efekti */
+.table tbody tr:hover {
+    background-color: #353535 !important; /* Hover sırasında satır rengi */
+    transition: background-color 0.3s ease-in-out !important; /* Hover geçiş animasyonu */
+}
+
+/* Alternatif satır renkleri */
+.table tbody tr:nth-child(even) {
+    background-color: #292929 !important; /* Çift numaralı satırların rengi */
+}
+
+/* Datatable butonları */
+.dt-buttons .dt-button {
+    background-color: #1976d2 !important; /* Export butonları arka plan */
+    color: #fff !important; /* Yazı rengi */
+    border: 1px solid #1565c0 !important; /* Kenarlık */
+    padding: 5px 10px !important; /* İç boşluk */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+    margin-right: 5px;
+}
+
+.dt-buttons .dt-button:hover {
+    background-color: #1565c0 !important; /* Hover durumunda mavi ton */
+    color: #fff !important;
+    border-color: #1976d2 !important;
+}
+
+/* Sayfalama */
+.dataTables_paginate .paginate_button {
+    background-color: #333 !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background-color: #1976d2 !important;
+    color: #fff !important;
+    border-color: #1565c0 !important;
+}
+
+.dataTables_paginate .paginate_button.current {
+    background-color: #1976d2 !important;
+    color: #fff !important;
+    border: none;
+}
+
+
+/* Gelen/Giden özel satır renkleri */
+.row-gelen {
+    background-color: rgba(0, 255, 0, 0.1) !important; /* Transparan yeşil */
+}
+
+.row-giden {
+    background-color: rgba(255, 0, 0, 0.1) !important; /* Transparan kırmızı */
+}
+
+/* Tablo konteyneri stil düzenlemesi */
+.table-container {
+    border: none !important; /* Çerçeve tamamen kaldırıldı */
+    background-color: #1e1e1e !important; /* Konteyner arka planı tabloyla uyumlu */
+    overflow-y: auto !important; /* Dikey kaydırma etkin */
+    overflow-x: hidden !important; /* Yatay kaydırma devre dışı */
+    padding: 5px !important; /* İçerik ile kenarlar arasında boşluk */
+}
+
+/* Card Body */
+.card-body {
+    background-color: #2b2b2b !important; /* Card body arka planı */
+    color: #e0e0e0 !important; /* Card body yazı rengi */
+    border: 1px solid #444 !important; /* Card body kenarlığı */
+}
+/* Modal Header */
+.modal-header {
+    border-bottom: 1px solid #444 !important; /* Alt çizgiyi koyu renk yap */
+    background-color: #333 !important; /* Arka plan koyu */
+    color: #fff !important; /* Yazı rengi beyaz */
+}
+
+/* Modal Footer */
+.modal-footer {
+    border-top: 1px solid #444 !important; /* Üst çizgiyi koyu renk yap */
+    background-color: #333 !important; /* Arka plan koyu */
+}
+
+/* Modal Body */
+.modal-body {
+    background-color: #2b2b2b !important; /* Gövde koyu renk */
+    color: #e0e0e0 !important; /* Yazı açık renk */
+}
+
+/* Modal Buttons */
+.modal-footer .btn {
+    background-color: #1976d2 !important; /* Buton arka planı */
+    color: #fff !important; /* Yazı rengi */
+    border: 1px solid #1565c0 !important; /* Kenar rengi */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+}
+
+.modal-footer .btn:hover {
+    background-color: #1565c0 !important; /* Hover arka planı */
+    border-color: #1976d2 !important; /* Hover kenar rengi */
+}
+.swal2-popup {
+    background-color: #2b2b2b !important; /* Popup arka planı */
+    color: #e0e0e0 !important; /* Yazı rengi */
+    border: 1px solid #444 !important; /* Kenarlık */
+    border-radius: 8px !important; /* Köşe yuvarlama */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6) !important; /* Hafif gölge */
+}
+
+.swal2-title {
+    color: #ffffff !important; /* Başlık yazı rengi */
+    font-weight: bold !important; /* Kalın yazı */
+    font-size: 1.5rem !important; /* Başlık yazı boyutu */
+}
+
+.swal2-html-container {
+    color: #e0e0e0 !important; /* Mesaj yazı rengi */
+    font-size: 1rem !important; /* Mesaj yazı boyutu */
+}
+
+.swal2-input,
+.swal2-textarea {
+    background-color: #444 !important; /* Input arka planı */
+    color: #e0e0e0 !important; /* Yazı rengi */
+    border: 1px solid #666 !important; /* Kenarlık rengi */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+    padding: 10px !important; /* İç boşluk */
+}
+
+.swal2-input:focus,
+.swal2-textarea:focus {
+    border-color: #1976d2 !important; /* Focus durumunda kenar rengi */
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5) !important; /* Hafif parlama */
+}
+
+/* Butonlar */
+.swal2-confirm {
+    background-color: #1976d2 !important; /* Onay butonu arka plan */
+    color: #ffffff !important; /* Yazı rengi */
+    border: none !important; /* Kenar yok */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+    padding: 10px 20px !important; /* Buton boyutu */
+}
+
+.swal2-cancel {
+    background-color: #444 !important; /* İptal butonu arka plan */
+    color: #e0e0e0 !important; /* Yazı rengi */
+    border: 1px solid #666 !important; /* Kenarlık */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+    padding: 10px 20px !important; /* Buton boyutu */
+}
+
+.swal2-confirm:hover {
+    background-color: #1565c0 !important; /* Hover durumunda onay rengi */
+}
+
+.swal2-cancel:hover {
+    background-color: #555 !important; /* Hover durumunda iptal rengi */
+}
+
+/* Close Button (Kapatma Butonu) */
+.swal2-close {
+    color: #e0e0e0 !important; /* Kapatma butonu rengi */
+    font-size: 1.2rem !important; /* Kapatma butonu boyutu */
+}
+/* Beyaz ve beyaza yakın kart başlıkları */
+.card-header {
+    color: #333 !important; /* Varsayılan yazı rengi (açık temada koyu metin) */
+}
+
+.dark-mode .card-header {
+    background-color: #444 !important; /* Dark mod için arka plan rengi */
+    color: #e0e0e0 !important; /* Dark mod için yazı rengi */
+}
+
+/* Sadece beyaz kartları hedeflemek için */
+.card-light .card-header {
+    background-color: #f5f5f5 !important; /* Açık tema kart başlık arka planı */
+    color: #333 !important; /* Açık tema yazı rengi */
+}
+
+.dark-mode .card-light .card-header {
+    background-color: #2b2b2b !important; /* Dark mod için kart başlık arka planı */
+    color: #e0e0e0 !important; /* Dark mod için yazı rengi */
+}
+/* Genel sidebar ayarları */
+.main-sidebar {
+    background-color: #2b2b2b !important; /* Sidebar arka plan rengi (dark mode) */
+    color: #e0e0e0 !important; /* Sidebar yazı rengi */
+}
+
+/* Menü başlıkları */
+.main-sidebar .brand-link {
+    background-color: #444 !important; /* Brand kısmı arka plan rengi */
+    color: #e0e0e0 !important; /* Brand kısmı yazı rengi */
+    text-align: center; /* Ortalanmış yazı */
+}
+
+/* Aktif menü linki */
+.main-sidebar .nav-link.active {
+    background-color: #1976d2 !important; /* Aktif menü link arka plan rengi */
+    color: #ffffff !important; /* Aktif menü link yazı rengi */
+}
+
+/* Menü linkleri */
+.main-sidebar .nav-link {
+    color: #bdbdbd !important; /* Menü link yazı rengi */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hover animasyonu */
+}
+
+/* Hover durumunda menü linki */
+.main-sidebar .nav-link:hover {
+    background-color: #353535 !important; /* Hover durumunda arka plan */
+    color: #ffffff !important; /* Hover durumunda yazı rengi */
+}
+
+/* Menü gruplarının başlıkları */
+.main-sidebar .nav-header {
+    color: #888 !important; /* Başlık yazı rengi */
+    font-size: 14px; /* Başlık yazı boyutu */
+    padding: 10px 15px; /* İç boşluk */
+    text-transform: uppercase; /* Büyük harf */
+}
+
+/* Dropdown menü */
+.main-sidebar .nav-treeview {
+    background-color: #3c3c3c !important; /* Alt menü arka plan */
+}
+
+.main-sidebar .nav-treeview .nav-link {
+    color: #bdbdbd !important; /* Alt menü link yazı rengi */
+}
+
+.main-sidebar .nav-treeview .nav-link:hover {
+    background-color: #484848 !important; /* Alt menü hover arka plan */
+    color: #ffffff !important; /* Alt menü hover yazı rengi */
+}
+
+
+/* Scrollbar için genel stil */
+body, .main-sidebar, .content-wrapper {
+    scrollbar-color: #444 #2b2b2b !important; /* Thumb (kayan çubuk) ve track (arka plan) renkleri */
+    scrollbar-width: thin !important; /* İnce scroll bar */
+}
+
+/* Webkit tabanlı tarayıcılar (Chrome, Edge, Safari) için scroll bar */
+::-webkit-scrollbar {
+    width: 8px; /* Scroll bar genişliği */
+    height: 8px; /* Scroll bar yüksekliği */
+}
+
+::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Scroll bar arka plan rengi */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444; /* Scroll bar thumb rengi */
+    border-radius: 4px; /* Köşeleri yuvarla */
+    border: 1px solid #555; /* Thumb için kenarlık */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Hover durumunda thumb rengi */
+    border-color: #666; /* Hover durumunda kenarlık rengi */
+}
+
+/* Alt alanlar için (örneğin sidebar veya özel containerlar) */
+.sidebar, .table-container, .modal-body {
+    scrollbar-color: #444 #2b2b2b !important;
+    scrollbar-width: thin !important;
+}
+
+.sidebar::-webkit-scrollbar, 
+.table-container::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar {
+    width: 6px; /* Alt alanlarda daha ince scroll bar */
+}
+
+.sidebar::-webkit-scrollbar-thumb, 
+.table-container::-webkit-scrollbar-thumb,
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 3px;
+    border: 1px solid #555;
+}

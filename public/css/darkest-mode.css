@@ -1,0 +1,293 @@
+/* Genel Body Ayarları */
+body {
+    background-color: #000000 !important; /* Tam koyu arka plan */
+    color: #e0e0e0 !important; /* Açık yazı rengi */
+}
+
+/* SmallBox */
+.small-box {
+    background-color: #121212 !important; /* SmallBox koyu gri arka plan */
+    color: #e0e0e0 !important; /* Açık yazı */
+    border: 1px solid #222 !important; /* Koyu kenar */
+    box-shadow: none !important; /* Gölge yok */
+}
+
+.small-box h3 {
+    color: #ffffff !important; /* Beyaz başlık */
+    font-weight: bold;
+}
+
+.small-box p {
+    color: #cccccc !important; /* Açık gri açıklama yazı rengi */
+}
+
+.small-box .icon i {
+    color: #555555 !important; /* İkon rengi */
+}
+
+.small-box-footer {
+    background-color: #1c1c1c !important; /* Footer arka planı */
+    color: #cccccc !important; /* Footer yazı rengi */
+    border-top: 1px solid #333 !important; /* Üst kenar */
+    text-decoration: none !important;
+}
+
+.small-box-footer:hover {
+    background-color: #222222 !important; /* Hover durumda koyu gri */
+    color: #ffffff !important; /* Beyaz hover yazı rengi */
+}
+
+/* Butonlar */
+button, .btn {
+    background-color: #222222 !important; /* Koyu gri arka plan */
+    color: #e0e0e0 !important; /* Açık yazı */
+    border: 1px solid #333 !important; /* Kenar */
+    border-radius: 4px !important; /* Köşe yuvarlama */
+    box-shadow: none !important; /* Gölge yok */
+    padding: 8px 12px !important; /* Buton boyutu */
+}
+
+button:hover, .btn:hover {
+    background-color: #333333 !important; /* Hover daha koyu gri */
+    color: #ffffff !important; /* Beyaz yazı */
+    border-color: #444 !important; /* Hover kenar */
+}
+
+/* Aktif Buton */
+button:active, .btn:active {
+    background-color: #444 !important; /* Aktif durumda koyu gri */
+    color: #ffffff !important; /* Beyaz yazı */
+    border-color: #555 !important;
+}
+
+/* Disabled Buton */
+button:disabled, .btn:disabled {
+    background-color: #333 !important;
+    color: #777 !important; /* Açık gri yazı */
+    border: 1px solid #444 !important;
+    cursor: not-allowed !important;
+}
+
+/* Kartlar */
+.card {
+    background-color: #121212 !important; /* Tam koyu arka plan */
+    color: #e0e0e0 !important; /* Açık yazı */
+    border: 1px solid #222 !important; /* Koyu kenarlık */
+    box-shadow: none !important;
+}
+
+.card-header {
+    background-color: #1c1c1c !important; /* Daha koyu gri */
+    color: #ffffff !important; /* Beyaz başlık */
+    border-bottom: 1px solid #333 !important;
+}
+
+.card-body {
+    background-color: #121212 !important; /* Tam koyu arka plan */
+    color: #e0e0e0 !important;
+}
+
+.card-footer {
+    background-color: #1c1c1c !important;
+    border-top: 1px solid #333 !important;
+}
+
+/* Modal */
+.modal-content {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important;
+}
+
+.modal-header {
+    background-color: #1c1c1c !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.modal-footer {
+    background-color: #1c1c1c !important;
+    color: #e0e0e0 !important;
+    border-top: 1px solid #333 !important;
+}
+
+/* Input Alanları */
+input, textarea, select {
+    background-color: #1c1c1c !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #555 !important;
+    box-shadow: none !important;
+}
+
+/* Tablolar */
+table {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+    border-collapse: collapse !important;
+    border: none !important;
+}
+
+
+table th {
+    background-color: #1c1c1c !important;
+    color: #ffffff !important;
+    border: 1px solid #333 !important;
+}
+
+table td {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important;
+}
+
+table tbody tr:hover {
+    background-color: #222222 !important;
+}
+#masraflar-table {
+    border: none !important; /* Tablo kenarlığını kaldır */
+    outline: none !important; /* Tablo etrafındaki dış çizgiyi kaldır */
+    background-color: #000 !important; /* Tablo arka planı siyah */
+}
+.table-container {
+    border: none !important; /* Tablo kapsayıcı çerçevesini kaldır */
+}
+
+table th, table td {
+    border: 1px solid #444 !important; /* Sadece hücre çizgileri */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #1a1a1a !important;
+}
+
+/* Scrollbar */
+body, .main-sidebar, .content-wrapper {
+    scrollbar-color: #333 #121212 !important;
+    scrollbar-width: thin !important;
+}
+table#masraflar-table thead th {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+table#hesaplar-table thead th {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+table#hareketler-table thead th {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+table#personelTable-table thead th {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+}
+
+/* SweetAlert2 */
+.swal2-popup {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important;
+}
+
+.swal2-confirm, .swal2-cancel {
+    background-color: #1c1c1c !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important;
+}
+
+/* Sidebar */
+.main-sidebar {
+    background-color: #1c1c1c !important;
+    color: #e0e0e0 !important;
+}
+
+.main-sidebar .nav-link {
+    color: #cccccc !important;
+}
+
+.main-sidebar .nav-link.active {
+    background-color: #333 !important;
+    color: #ffffff !important;
+}
+
+/* Kart Başlıkları */
+.card-header {
+    background-color: #1c1c1c !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container-fluid, .content-wrapper, .modal-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.main-header {
+    background-color: #1e1e1e !important; /* Header için koyu arka plan */
+    border-bottom: 1px solid #333 !important; /* Alt çizgi */
+    color: #e0e0e0 !important; /* Yazı rengi */
+}
+
+.main-header .navbar {
+    background-color: #1e1e1e !important; /* Header navbar için koyu arka plan */
+    color: #e0e0e0 !important; /* Yazı rengi */
+}
+
+.main-header .navbar .nav-link {
+    color: #e0e0e0 !important; /* Link rengi */
+}
+
+.main-footer {
+    background-color: #1e1e1e !important; /* Footer için koyu arka plan */
+    border-top: 1px solid #333 !important; /* Üst çizgi */
+    color: #e0e0e0 !important; /* Yazı rengi */
+}
+
+.main-footer a {
+    color: #1976d2 !important; /* Footer link rengi */
+    text-decoration: none !important;
+}
+
+.main-footer a:hover {
+    color: #1565c0 !important; /* Hover durumunda footer link rengi */
+}
+.main-header .nav-item .nav-link i {
+    color: #ffffff !important; /* Menü ikonunu beyaz yap */
+}
+
+.main-header .nav-item .nav-link {
+    color: #ffffff !important; /* Buton yazı rengini beyaz yap */
+    background-color: transparent !important; /* Arka planı şeffaf bırak */
+    border: none !important;
+}
+
+.main-header .nav-item .nav-link:hover {
+    background-color: #333 !important; /* Hover durumunda arka plan rengi */
+    color: #ffffff !important; /* Hover durumunda yazı rengi beyaz */
+}
